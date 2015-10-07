@@ -1,4 +1,5 @@
 #include "graphics.h"
+#include "globals.h"
 #include <SDL.h>
 #include <SDL_image.h>
 
@@ -8,7 +9,7 @@ Contains all the informations related to the graphics of the game
 
 Graphics::Graphics()
 {
-	SDL_CreateWindowAndRenderer(640, 480, 0, &this->_window, &this->_renderer);
+	SDL_CreateWindowAndRenderer(globals::SCREEN_WIDTH,globals::SCREEN_HEIGHT, 0, &this->_window, &this->_renderer);
 	SDL_SetWindowTitle(this->_window, "SDLCave");
 }
 
@@ -34,5 +35,15 @@ SDL_Surface* Graphics::loadImage(const std::string &FilePath)
 
 void Graphics::blitSurface(SDL_Texture* source, SDL_Rect* sourceRectangle, SDL_Rect* destinationRectangle)
 {
+	SDL_RenderCopy(this->_renderer, source, sourceRectangle, destinationRectangle);
+}
 
+void Graphics::flip()
+{
+	SDL_RenderPresent(this->_renderer);
+}
+
+void Graphics::clear()
+{
+	SDL_RenderClear(this->_renderer);
 }

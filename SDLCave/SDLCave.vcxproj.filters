@@ -30,6 +30,9 @@
     <ClCompile Include="input.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="sprite.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="graphics.h">
@@ -41,9 +44,15 @@
     <ClInclude Include="input.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="sprite.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\..\..\Desktop\MyChar.png">
+    <Image Include="content\sprites\MyChar.png">
       <Filter>Fichiers de ressources\Sprites</Filter>
     </Image>
   </ItemGroup>
