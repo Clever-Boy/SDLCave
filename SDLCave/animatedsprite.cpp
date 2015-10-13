@@ -65,10 +65,6 @@ void AnimatedSprite::draw(Graphics & graphics, int x, int y)
 	}
 }
 
-void AnimatedSprite::setupAnimations()
-{
-	this->addAnimation(3, 0, 0, "runLeft", 16, 16, Vector2(0, 0));
-}
 
 void AnimatedSprite::addAnimation(int frames, int x, int y, std::string name, int width, int height, Vector2 offset)
 {
@@ -97,10 +93,5 @@ void AnimatedSprite::stopAnimation()
 void AnimatedSprite::setVisible(bool visible)
 {
 	this->_visible = visible;
-}
-
-void AnimatedSprite::animationDone(std::string currentAnimation)
-{
-
 }
 

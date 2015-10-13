@@ -34,15 +34,15 @@ public:
 	*/
 	void draw(Graphics &graphics, int x, int y);
 
-	/* void setupAnimations
-	A required function to setup all the animations for the animated sprite
-	*/
-	virtual void setupAnimations();
-
 protected:
 	double _timeToUpdate;
 	bool _currentAnimationOnce;
 	std::string _currentAnimation;
+
+	/* void setupAnimations
+	A required function to setup all the animations for the animated sprite
+	*/
+	virtual void setupAnimations() = 0;
 
 	/* void addAnimation
 	Add an animation to the map of animations
@@ -67,7 +67,7 @@ protected:
 	/* void animationDone
 	The logic that happened when an animation ends.
 	*/
-	virtual void animationDone(std::string currentAnimation);
+	virtual void animationDone(std::string currentAnimation) = 0;
 
 private:
 	std::map<std::string, std::vector<SDL_Rect>> _animations;
