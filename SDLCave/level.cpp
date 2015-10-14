@@ -43,6 +43,6 @@ void Level::draw(Graphics & graphics)
 void Level::loadMap(std::string mapName, Graphics & graphics)
 {
 	// TEMPORARY CODE TO LOAD BACKGROUND
-	this->_backgroundTexture = SDL_CreateTextureFromSurface(graphics.getRenderer(), graphics.loadImage("content/background/bkBlue.png"));
+	this->_backgroundTexture = SDL_CreateTextureFromSurface(graphics.getRenderer(), graphics.loadImage("content/backgrounds/bkBlue.png"));
 	this->_size = Vector2(1280,960);
 }
