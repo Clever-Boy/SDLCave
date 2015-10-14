@@ -3,7 +3,7 @@
 
 namespace player_constants
 {
-	const float WALK_SPEED = 0.2f;
+	const float WALK_SPEED = 0.2;
 }
 
 Player::Player()
@@ -54,10 +54,10 @@ void Player::draw(Graphics &graphics)
 	AnimatedSprite::draw(graphics, this->_x, this->_y);
 }
 
-void Player::update(float elpasedTime)
+void Player::update(float elapsedTime)
 {
 	//move by _dx
-	this->_x += this->_dx * elpasedTime;
+	this->_x += this->_dx * elapsedTime;
 	
-	AnimatedSprite::update(elpasedTime);
+	AnimatedSprite::update(elapsedTime);
 }
