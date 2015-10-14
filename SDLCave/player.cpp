@@ -14,7 +14,7 @@ Player::Player(Graphics &graphics, float x, float y) : AnimatedSprite(graphics, 
 {
 	graphics.loadImage("content/sprites/MyChar.png");
 	this->setupAnimations();
-	this->playAnimation("idleLeft");
+	this->playAnimation("IdleLeft");
 }
 
 void Player::setupAnimations()
@@ -46,7 +46,7 @@ void Player::moveRight()
 void Player::stopMoving()
 {
 	this->_dx = 0;
-	this->playAnimation(this->_facing == LEFT ? "IdleLeft" : "IdleRight");
+	this->playAnimation(this->_facing == LEFT ? "idleLeft" : "idleRight");
 }
 
 void Player::draw(Graphics &graphics)
