@@ -150,6 +150,9 @@
       <DeploymentContent>false</DeploymentContent>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="content\maps\map 1.tmx" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

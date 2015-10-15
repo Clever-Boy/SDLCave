@@ -19,6 +19,9 @@
     <Filter Include="Fichiers de ressources\Backgrounds">
       <UniqueIdentifier>{c03b50a9-aeff-4299-863c-8d2ce24c7f2e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers de ressources\Maps">
+      <UniqueIdentifier>{97d0205b-09e2-4968-adb8-84390c98b2e5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -85,5 +88,10 @@
     <Image Include="content\backgrounds\bkBlue.png">
       <Filter>Fichiers de ressources\Backgrounds</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\maps\map 1.tmx">
+      <Filter>Fichiers de ressources\Maps</Filter>
+    </None>
   </ItemGroup>
 </Project>
