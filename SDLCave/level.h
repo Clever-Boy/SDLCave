@@ -27,4 +27,20 @@ private:
 	void loadMap(std::string mapName, Graphics &graphics);
 };
 
+struct Tileset {
+	SDL_Texture* Texture;
+	int FirstGid;
+
+	Tileset()
+	{
+		this->FirstGid = -1;
+	}
+
+	Tileset(SDL_Texture* Texture, int FirstGid)
+	{
+		this->Texture = Texture;
+		this->FirstGid = FirstGid;
+	}
+};
+
 #endif
